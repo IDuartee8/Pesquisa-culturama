@@ -28,6 +28,7 @@ form{
     background-color: rgba(112, 115, 128, 0.295);
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset{
@@ -71,4 +72,41 @@ input[type="checkbox"]{
 input[type="color"]{
     width: 40px;
     padding: 0 3px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid{
+    border-color: rgba(255, 0, 0, 0.377);
+}
+
+input:valid,
+select:valid,
+textarea:valid{
+    border-color: rgba(0, 128, 0, 0.438);
+}
+
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    border: 2px solid rgba(94, 80, 224, 0.678);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #f9f9f9;
+}
+
+button[type="reset"]:hover{
+    background-color: orangered;
+    color: #f9f9f9;
 }
